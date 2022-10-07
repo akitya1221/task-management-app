@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <title>confirmation</title>
+</head>
+<body>
+    <h1>登録情報</h1>
+    <h2>下記のデータで登録されました！</h2>
+    <ul>
+        <li>ユーザーID：<%= user[0]['id'] %></li>
+        <li>ユーザー名：<%= user[0]['name'] %></li>
+    </ul>
+    <a href="/management">管理ページに戻る</a>
+</body>
+</html>

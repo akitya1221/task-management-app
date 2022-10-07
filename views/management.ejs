@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+    <title>management</title>
+</head>
+<body>
+    <div id="management">
+        <h1>管理画面</h1>
+        <p>ユーザーやタスクの管理をすることができる画面</p>
+        <h2>ユーザー管理</h2>
+        <div class="signup">
+            <button class="add-btn"><a href="/signup">新規ユーザー登録</a></button>
+        </div>
+        <div class="user-list">
+            <h3>ユーザーリスト</h3>
+            <% users.forEach (value => { %>
+                <div class="user">
+                    <a href="/removeUser/<%= value.id %>"><button class="del-btn" onclick="removeAlert()">【✖︎】</button></a>
+                    <%= value.name %><br>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+</body>
+</html>

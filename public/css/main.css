@@ -1,0 +1,73 @@
+body {
+  background-color: black;
+  color: #fff;
+}
+
+body .add-btn {
+  background-color: #00ff08;
+  cursor: pointer;
+}
+
+body .del-btn {
+  background-color: red;
+  cursor: pointer;
+}
+
+body a {
+  color: #00a6ff;
+  text-decoration: none;
+}
+
+body li {
+  list-style: none;
+}
+
+#index .content .task-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#index .content .task-list .box {
+  border: solid 3px aqua;
+  width: 330px;
+  height: 200px;
+  margin: 20px;
+  padding: 0;
+}
+
+#index .content .task-list .box li {
+  margin: 0 5px;
+  overflow-wrap: break-word;
+}
+
+#signup {
+  margin-left: 10px;
+}
+
+#signup .user-form form {
+  margin-left: 10px;
+}
+
+#signup .user-form form .add-btn {
+  margin-top: 10px;
+}
+
+#management {
+  margin-left: 10px;
+}
+
+#management .signup .add-btn {
+  margin-left: 10px;
+}
+
+#management .signup a {
+  color: black;
+}
+
+#management .user-list .user {
+  margin: 10px;
+}
+/*# sourceMappingURL=main.css.map */

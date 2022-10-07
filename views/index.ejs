@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+    <title>Index</title>
+</head>
+<body>
+    <header>
+        <h1>メインページ</h1>
+    </header>
+    <div id="index">
+        <div class="content">
+            <h2>コンテンツ</h2>
+            <div class="edit">
+                <label>タスク追加：</label><a href="/form"><button class="add-btn" type="button">【＋】</button></a>
+            </div>
+            <h3>ユーザータスク一覧</h3>
+            <!-- for文を使って表示 -->
+            <div class="task-list">
+                <% user_tasks.forEach (value => { %>
+                    <ul class="box">
+                        <!-- value.idを/deleteへ送信 -->
+                        <li class="delete-icon"><a href="/delete/<%= value.id %>" onclick="delConfirm()">【✖︎】</a></li>
+                        <li class="task-id">タスクNo：<%= value.id %></li>
+                        <li class="user-name">担当者：<%= value.name %></li>
+                        <li class="content-task">タスク内容：</li>
+                        <li><%= value.text %></li>
+                    </ul>
+                <% }); %>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

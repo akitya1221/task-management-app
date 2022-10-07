@@ -1,0 +1,85 @@
+// 共通
+body {
+    background-color: black;
+    color: #fff;
+    .add-btn {
+        background-color: rgb(0, 255, 8);
+        cursor: pointer;
+    }
+    .del-btn {
+        background-color: red;
+        cursor: pointer;
+    }
+    a {
+        color: rgb(0, 166, 255);
+        text-decoration: none;
+    }
+    li {
+        list-style: none;
+    }
+}
+// ----------------------------------------
+// indexページ
+#index {
+    .content {
+        .task-list {
+            display: flex;
+            flex-wrap: wrap;
+            .box {
+                border: solid 3px aqua;
+                width: 330px;
+                height: 200px;
+                margin: 20px;
+                padding: 0;
+                li {
+                    margin: 0 5px;
+                    overflow-wrap: break-word;
+                }
+            }
+        }
+    }
+}
+// ---------------------------------------------------
+
+// form
+#task-form {
+    form {
+        .input-user {
+
+        }
+        .input-task {
+            
+        }
+    }
+}
+// signup
+#signup {
+    margin-left: 10px;
+    .user-form {
+        form {
+            margin-left: 10px;
+            .add-btn {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+// confirmation
+
+// management
+#management {
+    margin-left: 10px;
+    .signup {
+        .add-btn {
+            margin-left: 10px;
+        }
+        a {
+            color: black;
+        }
+    }
+    .user-list {
+        .user {
+            margin: 10px;
+        }
+    }
+}
